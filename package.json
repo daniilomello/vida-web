@@ -9,6 +9,10 @@
     "preview": "vite preview",
     "lint-staged": "lint-staged",
     "commitlint": "commitlint --edit",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext ts,tsx --report-unused-disable-directives --fix --max-warnings 0",
+    "prettier": "prettier --write .",
+    "prettier:check": "prettier --check .",
     "prepare": "husky"
   },
   "dependencies": {
@@ -20,15 +24,20 @@
   "devDependencies": {
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
+    "@eslint/json": "^0.13.2",
     "@types/node": "^24.8.1",
     "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react-swc": "^4.1.0",
+    "eslint": "^9.38.0",
+    "eslint-plugin-react-hooks": "^6.0.0",
+    "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.4.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.4",
     "prettier": "^3.6.2",
     "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.1",
     "vite": "^7.1.7"
   }
 }
