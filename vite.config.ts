@@ -6,6 +6,11 @@ import path from 'path';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: 'https://vida.danilabs.com.br/',
+  server: {
+    open: true,
+    port: 3000,
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
