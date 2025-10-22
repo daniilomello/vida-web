@@ -25,4 +25,4 @@ jobs:
         run: npm ci
 
       - name: Running Lint
-        run: yarn ci:lint
+        run: npm run lint:fix
