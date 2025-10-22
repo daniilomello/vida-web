@@ -1,0 +1,13 @@
+version: 2.0
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+  pre_build:
+    commands:
+      - npm pkg delete script.prepare
+      - npm ci
+  build:
+    commands:
+      - npm run build
